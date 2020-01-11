@@ -1,0 +1,12 @@
+nohup: ignoring input
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (16, 3)
+[INFO] Test shape: (4, 3)
+[INFO] Finding best model...
+Traceback (most recent call last):
+  File "0_linnerud.py", line 52, in <module>
+    automl.fit(X_train, y_train, dataset_name='boston_housing')   #change dataset name accordingly
+  File "/vol/home/s2590433/test1/anaconda3/envs/amlenv/lib/python3.6/site-packages/autosklearn/estimators.py", line 791, in fit
+    " supported" % target_type)
+ValueError: regression with data of type multiclass-multioutput is not supported

@@ -1,0 +1,71 @@
+nohup: ignoring input
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (353, 10)
+[INFO] Test shape: (89, 10)
+[INFO] Finding best model...
+[WARNING] [2020-01-11 20:11:20,986:AutoMLSMBO(1)::boston_housing] Could not find meta-data directory /vol/home/s2590433/test1/anaconda3/envs/amlenv/lib/python3.6/site-packages/autosklearn/metalearning/files/r2_regression_dense
+[WARNING] [2020-01-11 20:11:20,993:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 20:11:20,996:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[INFO] Elapsed time finding best model: 1801.5381772518158 seconds.
+
+
+--- MODELS: ---
+[(0.380000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'no_preprocessing', 'regressor:__choice__': 'libsvm_svr', 'rescaling:__choice__': 'none', 'regressor:libsvm_svr:C': 27843.589979927692, 'regressor:libsvm_svr:epsilon': 0.31581925250229154, 'regressor:libsvm_svr:kernel': 'rbf', 'regressor:libsvm_svr:max_iter': -1, 'regressor:libsvm_svr:shrinking': 'False', 'regressor:libsvm_svr:tol': 2.363633583462711e-05, 'regressor:libsvm_svr:degree': 4, 'regressor:libsvm_svr:gamma': 0.08927039625814545},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.360000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'feature_agglomeration', 'regressor:__choice__': 'libsvm_svr', 'rescaling:__choice__': 'normalize', 'preprocessor:feature_agglomeration:affinity': 'manhattan', 'preprocessor:feature_agglomeration:linkage': 'complete', 'preprocessor:feature_agglomeration:n_clusters': 102, 'preprocessor:feature_agglomeration:pooling_func': 'mean', 'regressor:libsvm_svr:C': 0.10107457600919442, 'regressor:libsvm_svr:epsilon': 0.4540743288311582, 'regressor:libsvm_svr:kernel': 'linear', 'regressor:libsvm_svr:max_iter': -1, 'regressor:libsvm_svr:shrinking': 'True', 'regressor:libsvm_svr:tol': 0.000946630431157601},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.180000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'extra_trees_preproc_for_regression', 'regressor:__choice__': 'libsvm_svr', 'rescaling:__choice__': 'standardize', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'preprocessor:extra_trees_preproc_for_regression:bootstrap': 'False', 'preprocessor:extra_trees_preproc_for_regression:criterion': 'friedman_mse', 'preprocessor:extra_trees_preproc_for_regression:max_depth': 'None', 'preprocessor:extra_trees_preproc_for_regression:max_features': 0.9557985159641658, 'preprocessor:extra_trees_preproc_for_regression:max_leaf_nodes': 'None', 'preprocessor:extra_trees_preproc_for_regression:min_samples_leaf': 20, 'preprocessor:extra_trees_preproc_for_regression:min_samples_split': 14, 'preprocessor:extra_trees_preproc_for_regression:min_weight_fraction_leaf': 0.0, 'preprocessor:extra_trees_preproc_for_regression:n_estimators': 100, 'regressor:libsvm_svr:C': 3909.598103829262, 'regressor:libsvm_svr:epsilon': 0.26834371606838564, 'regressor:libsvm_svr:kernel': 'linear', 'regressor:libsvm_svr:max_iter': -1, 'regressor:libsvm_svr:shrinking': 'True', 'regressor:libsvm_svr:tol': 6.701221400441467e-05, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.0038106972095659293},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'pca', 'regressor:__choice__': 'libsvm_svr', 'rescaling:__choice__': 'normalize', 'preprocessor:pca:keep_variance': 0.784541937313409, 'preprocessor:pca:whiten': 'True', 'regressor:libsvm_svr:C': 0.1167745652159968, 'regressor:libsvm_svr:epsilon': 0.022211411853473275, 'regressor:libsvm_svr:kernel': 'poly', 'regressor:libsvm_svr:max_iter': -1, 'regressor:libsvm_svr:shrinking': 'False', 'regressor:libsvm_svr:tol': 0.03383553833992342, 'regressor:libsvm_svr:coef0': 0.5370882567733426, 'regressor:libsvm_svr:degree': 3, 'regressor:libsvm_svr:gamma': 1.8889161565213393},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'libsvm_svr', 'rescaling:__choice__': 'normalize', 'preprocessor:polynomial:degree': 3, 'preprocessor:polynomial:include_bias': 'False', 'preprocessor:polynomial:interaction_only': 'True', 'regressor:libsvm_svr:C': 2910.1798415447543, 'regressor:libsvm_svr:epsilon': 0.0374482658807985, 'regressor:libsvm_svr:kernel': 'rbf', 'regressor:libsvm_svr:max_iter': -1, 'regressor:libsvm_svr:shrinking': 'False', 'regressor:libsvm_svr:tol': 2.2523381167080654e-05, 'regressor:libsvm_svr:degree': 4, 'regressor:libsvm_svr:gamma': 0.0013911700432534722},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+]
+
+
+--- STATISTICS: ---
+auto-sklearn results:
+  Dataset name: boston_housing
+  Metric: r2
+  Best validation score: 0.470345
+  Number of target algorithm runs: 39
+  Number of successful target algorithm runs: 33
+  Number of crashed target algorithm runs: 0
+  Number of target algorithms that exceeded the time limit: 6
+  Number of target algorithms that exceeded the memory limit: 0
+
+
+
+--- SCORE: ---
+R2 score 0.5022920381601553

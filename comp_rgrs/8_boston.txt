@@ -1,0 +1,127 @@
+nohup: ignoring input
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (404, 13)
+[INFO] Test shape: (102, 13)
+[INFO] Finding best model...
+[WARNING] [2020-01-11 20:09:57,825:AutoMLSMBO(1)::boston_housing] Could not find meta-data directory /vol/home/s2590433/test1/anaconda3/envs/amlenv/lib/python3.6/site-packages/autosklearn/metalearning/files/r2_regression_dense
+[WARNING] [2020-01-11 20:09:57,831:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 20:09:57,834:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[INFO] Elapsed time finding best model: 1801.3168902397156 seconds.
+
+
+--- MODELS: ---
+[(0.220000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'kitchen_sinks', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'standardize', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'False', 'preprocessor:kitchen_sinks:gamma': 0.13170377978824882, 'preprocessor:kitchen_sinks:n_components': 776, 'regressor:liblinear_svr:C': 12.911469104085729, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.20245943629855195, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 0.00018109893714810373},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.140000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'standardize', 'preprocessor:polynomial:degree': 2, 'preprocessor:polynomial:include_bias': 'True', 'preprocessor:polynomial:interaction_only': 'True', 'regressor:liblinear_svr:C': 365.87164102953443, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.02676090647035189, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 0.001242399950866007},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.120000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'random_trees_embedding', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'robust_scaler', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'preprocessor:random_trees_embedding:bootstrap': 'False', 'preprocessor:random_trees_embedding:max_depth': 8, 'preprocessor:random_trees_embedding:max_leaf_nodes': 'None', 'preprocessor:random_trees_embedding:min_samples_leaf': 1, 'preprocessor:random_trees_embedding:min_samples_split': 5, 'preprocessor:random_trees_embedding:min_weight_fraction_leaf': 1.0, 'preprocessor:random_trees_embedding:n_estimators': 68, 'regressor:liblinear_svr:C': 0.24611547194841654, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.6033691904000468, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 0.062366402253848506, 'rescaling:robust_scaler:q_max': 0.7293135831050086, 'rescaling:robust_scaler:q_min': 0.13101965395774998, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.00010633683090920337},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.120000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'normalize', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'False', 'preprocessor:nystroem_sampler:kernel': 'rbf', 'preprocessor:nystroem_sampler:n_components': 3515, 'regressor:liblinear_svr:C': 21727.034917185414, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.020579484002901067, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 3.153741077360109e-05, 'preprocessor:nystroem_sampler:gamma': 5.043654462133246},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.100000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'kitchen_sinks', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'quantile_transformer', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'False', 'preprocessor:kitchen_sinks:gamma': 0.4268337156988616, 'preprocessor:kitchen_sinks:n_components': 6477, 'regressor:liblinear_svr:C': 2139.9038861278814, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.8666905434224826, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 6.8353367266954e-05, 'rescaling:quantile_transformer:n_quantiles': 1503, 'rescaling:quantile_transformer:output_distribution': 'uniform'},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.080000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'kernel_pca', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'preprocessor:kernel_pca:kernel': 'poly', 'preprocessor:kernel_pca:n_components': 122, 'regressor:liblinear_svr:C': 22027.36355089201, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.6159599566002795, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 0.04384799032895415, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.13915364327443044, 'preprocessor:kernel_pca:coef0': 0.23699293520261566, 'preprocessor:kernel_pca:degree': 5, 'preprocessor:kernel_pca:gamma': 0.5089708124009418},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.080000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'kernel_pca', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'preprocessor:kernel_pca:kernel': 'poly', 'preprocessor:kernel_pca:n_components': 893, 'regressor:liblinear_svr:C': 9873.9979575905, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.7708984981558284, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 0.0002972830647075946, 'preprocessor:kernel_pca:coef0': 0.0, 'preprocessor:kernel_pca:degree': 3, 'preprocessor:kernel_pca:gamma': 1.0},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'False', 'preprocessor:polynomial:degree': 3, 'preprocessor:polynomial:include_bias': 'False', 'preprocessor:polynomial:interaction_only': 'False', 'regressor:liblinear_svr:C': 130.6962112363578, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.08172974932864605, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 0.00012464474567429714},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'preprocessor:polynomial:degree': 3, 'preprocessor:polynomial:include_bias': 'False', 'preprocessor:polynomial:interaction_only': 'False', 'regressor:liblinear_svr:C': 271.1778447930654, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.001863527606654667, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 1.0540307195100874e-05},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.020000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'preprocessor:polynomial:degree': 3, 'preprocessor:polynomial:include_bias': 'False', 'preprocessor:polynomial:interaction_only': 'False', 'regressor:liblinear_svr:C': 23.575911412757943, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.03076014861322413, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 1.1993939178526006e-05},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.020000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'polynomial', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'preprocessor:polynomial:degree': 3, 'preprocessor:polynomial:include_bias': 'False', 'preprocessor:polynomial:interaction_only': 'True', 'regressor:liblinear_svr:C': 12.092890157337905, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.018697064489571792, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 2.7530507025008274e-05},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.020000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'kitchen_sinks', 'regressor:__choice__': 'liblinear_svr', 'rescaling:__choice__': 'minmax', 'preprocessor:kitchen_sinks:gamma': 0.06630620935908893, 'preprocessor:kitchen_sinks:n_components': 206, 'regressor:liblinear_svr:C': 4344.846368518205, 'regressor:liblinear_svr:dual': 'False', 'regressor:liblinear_svr:epsilon': 0.9250876155664696, 'regressor:liblinear_svr:fit_intercept': 'True', 'regressor:liblinear_svr:intercept_scaling': 1, 'regressor:liblinear_svr:loss': 'squared_epsilon_insensitive', 'regressor:liblinear_svr:tol': 4.568181330224516e-05},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+]
+
+
+--- STATISTICS: ---
+auto-sklearn results:
+  Dataset name: boston_housing
+  Metric: r2
+  Best validation score: 0.865474
+  Number of target algorithm runs: 804
+  Number of successful target algorithm runs: 764
+  Number of crashed target algorithm runs: 40
+  Number of target algorithms that exceeded the time limit: 0
+  Number of target algorithms that exceeded the memory limit: 0
+
+
+
+--- SCORE: ---
+R2 score 0.8695220903449952

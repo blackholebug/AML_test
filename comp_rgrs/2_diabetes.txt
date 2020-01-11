@@ -1,0 +1,77 @@
+nohup: ignoring input
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (353, 10)
+[INFO] Test shape: (89, 10)
+[INFO] Finding best model...
+[WARNING] [2020-01-11 19:56:43,886:AutoMLSMBO(1)::boston_housing] Could not find meta-data directory /vol/home/s2590433/test1/anaconda3/envs/amlenv/lib/python3.6/site-packages/autosklearn/metalearning/files/r2_regression_dense
+[WARNING] [2020-01-11 19:56:43,894:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 19:56:43,898:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 19:56:45,900:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 19:56:47,903:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 20:11:28,499:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:11:28,499:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:12:48,666:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:12:48,666:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[INFO] Elapsed time finding best model: 1802.938303232193 seconds.
+
+
+--- MODELS: ---
+[(0.340000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'fast_ica', 'regressor:__choice__': 'ard_regression', 'rescaling:__choice__': 'normalize', 'preprocessor:fast_ica:algorithm': 'deflation', 'preprocessor:fast_ica:fun': 'exp', 'preprocessor:fast_ica:whiten': 'False', 'regressor:ard_regression:alpha_1': 0.0009052536750649062, 'regressor:ard_regression:alpha_2': 4.317299090337706e-08, 'regressor:ard_regression:fit_intercept': 'True', 'regressor:ard_regression:lambda_1': 0.00031952378218256204, 'regressor:ard_regression:lambda_2': 1.4563150891049424e-08, 'regressor:ard_regression:n_iter': 300, 'regressor:ard_regression:threshold_lambda': 83000.44850252864, 'regressor:ard_regression:tol': 0.05708585422476047},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.320000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'pca', 'regressor:__choice__': 'ard_regression', 'rescaling:__choice__': 'standardize', 'preprocessor:pca:keep_variance': 0.8973040302555169, 'preprocessor:pca:whiten': 'True', 'regressor:ard_regression:alpha_1': 0.00035172851921854933, 'regressor:ard_regression:alpha_2': 7.110776739068492e-07, 'regressor:ard_regression:fit_intercept': 'True', 'regressor:ard_regression:lambda_1': 1.626055174641219e-05, 'regressor:ard_regression:lambda_2': 0.0004971630769701801, 'regressor:ard_regression:n_iter': 300, 'regressor:ard_regression:threshold_lambda': 1209.0313293493336, 'regressor:ard_regression:tol': 2.2953966660597527e-05},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.260000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'kitchen_sinks', 'regressor:__choice__': 'ard_regression', 'rescaling:__choice__': 'quantile_transformer', 'preprocessor:kitchen_sinks:gamma': 0.017949545361191595, 'preprocessor:kitchen_sinks:n_components': 268, 'regressor:ard_regression:alpha_1': 0.0007804720919868603, 'regressor:ard_regression:alpha_2': 5.308719215446394e-10, 'regressor:ard_regression:fit_intercept': 'True', 'regressor:ard_regression:lambda_1': 2.7443110422203024e-06, 'regressor:ard_regression:lambda_2': 0.0005944055329507097, 'regressor:ard_regression:n_iter': 300, 'regressor:ard_regression:threshold_lambda': 63239.06076670648, 'regressor:ard_regression:tol': 0.09444492600342194, 'rescaling:quantile_transformer:n_quantiles': 679, 'rescaling:quantile_transformer:output_distribution': 'normal'},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.060000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'no_preprocessing', 'regressor:__choice__': 'ard_regression', 'rescaling:__choice__': 'none', 'regressor:ard_regression:alpha_1': 0.0009334645659456785, 'regressor:ard_regression:alpha_2': 7.615379141584177e-09, 'regressor:ard_regression:fit_intercept': 'True', 'regressor:ard_regression:lambda_1': 7.88395569334891e-05, 'regressor:ard_regression:lambda_2': 4.837369737711788e-10, 'regressor:ard_regression:n_iter': 300, 'regressor:ard_regression:threshold_lambda': 9959.900571782697, 'regressor:ard_regression:tol': 0.0001348690273928974},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.020000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'pca', 'regressor:__choice__': 'ard_regression', 'rescaling:__choice__': 'standardize', 'preprocessor:pca:keep_variance': 0.755023972639068, 'preprocessor:pca:whiten': 'True', 'regressor:ard_regression:alpha_1': 0.00047944478547178943, 'regressor:ard_regression:alpha_2': 5.1996954625117536e-05, 'regressor:ard_regression:fit_intercept': 'True', 'regressor:ard_regression:lambda_1': 1.3704718800600603e-06, 'regressor:ard_regression:lambda_2': 1.4658628939864709e-06, 'regressor:ard_regression:n_iter': 300, 'regressor:ard_regression:threshold_lambda': 3746.449675842689, 'regressor:ard_regression:tol': 0.00014481374866726204},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+]
+
+
+--- STATISTICS: ---
+auto-sklearn results:
+  Dataset name: boston_housing
+  Metric: r2
+  Best validation score: 0.495309
+  Number of target algorithm runs: 67
+  Number of successful target algorithm runs: 66
+  Number of crashed target algorithm runs: 0
+  Number of target algorithms that exceeded the time limit: 1
+  Number of target algorithms that exceeded the memory limit: 0
+
+
+
+--- SCORE: ---
+R2 score 0.48070429590336494

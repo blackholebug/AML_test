@@ -1,0 +1,109 @@
+nohup: ignoring input
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (404, 13)
+[INFO] Test shape: (102, 13)
+[INFO] Finding best model...
+[WARNING] [2020-01-11 20:14:22,487:AutoMLSMBO(1)::boston_housing] Could not find meta-data directory /vol/home/s2590433/test1/anaconda3/envs/amlenv/lib/python3.6/site-packages/autosklearn/metalearning/files/r2_regression_dense
+[WARNING] [2020-01-11 20:14:22,498:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 20:14:22,501:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-11 20:15:11,881:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:15:11,881:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:24:01,043:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:24:01,043:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:25:49,968:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[WARNING] [2020-01-11 20:25:49,968:smac.intensification.intensification.Intensifier] Challenger was the same as the current incumbent; Skipping challenger
+[INFO] Elapsed time finding best model: 1796.4143521785736 seconds.
+
+
+--- MODELS: ---
+[(0.320000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'standardize', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'preprocessor:nystroem_sampler:kernel': 'sigmoid', 'preprocessor:nystroem_sampler:n_components': 1612, 'regressor:ridge_regression:alpha': 0.06519643552793968, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 7.446004515707918e-05, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.010000000000000004, 'preprocessor:nystroem_sampler:coef0': 0.4373367142011151, 'preprocessor:nystroem_sampler:gamma': 0.10000000000000006},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.220000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'robust_scaler', 'preprocessor:nystroem_sampler:kernel': 'poly', 'preprocessor:nystroem_sampler:n_components': 98, 'regressor:ridge_regression:alpha': 0.0011371299546094667, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 2.679189947473978e-05, 'rescaling:robust_scaler:q_max': 0.7027562714022224, 'rescaling:robust_scaler:q_min': 0.23599648215963007, 'preprocessor:nystroem_sampler:coef0': 0.5429429192958284, 'preprocessor:nystroem_sampler:degree': 2, 'preprocessor:nystroem_sampler:gamma': 0.0035396151521902806},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.200000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'minmax', 'preprocessor:nystroem_sampler:kernel': 'rbf', 'preprocessor:nystroem_sampler:n_components': 5120, 'regressor:ridge_regression:alpha': 0.0008574542600496168, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 0.0003282370887740343, 'preprocessor:nystroem_sampler:gamma': 1.7015043241247567},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.060000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'minmax', 'preprocessor:nystroem_sampler:kernel': 'rbf', 'preprocessor:nystroem_sampler:n_components': 4847, 'regressor:ridge_regression:alpha': 0.0008574542600496168, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 0.009817772782027735, 'preprocessor:nystroem_sampler:gamma': 1.7015043241247567},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.060000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'random_trees_embedding', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'minmax', 'preprocessor:random_trees_embedding:bootstrap': 'True', 'preprocessor:random_trees_embedding:max_depth': 10, 'preprocessor:random_trees_embedding:max_leaf_nodes': 'None', 'preprocessor:random_trees_embedding:min_samples_leaf': 1, 'preprocessor:random_trees_embedding:min_samples_split': 2, 'preprocessor:random_trees_embedding:min_weight_fraction_leaf': 1.0, 'preprocessor:random_trees_embedding:n_estimators': 87, 'regressor:ridge_regression:alpha': 1.2523260650268186, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 1.4996427693987094e-05},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'minmax', 'preprocessor:nystroem_sampler:kernel': 'rbf', 'preprocessor:nystroem_sampler:n_components': 4990, 'regressor:ridge_regression:alpha': 0.022932980326627158, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 0.0013595694496505541, 'preprocessor:nystroem_sampler:gamma': 1.554021745031679},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'median', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'minmax', 'preprocessor:nystroem_sampler:kernel': 'sigmoid', 'preprocessor:nystroem_sampler:n_components': 187, 'regressor:ridge_regression:alpha': 0.0009666320188769839, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 1.0304749643263099e-05, 'preprocessor:nystroem_sampler:coef0': -0.3589132711551779, 'preprocessor:nystroem_sampler:gamma': 0.1826367118421475},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.040000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'no_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'minmax', 'preprocessor:nystroem_sampler:kernel': 'poly', 'preprocessor:nystroem_sampler:n_components': 187, 'regressor:ridge_regression:alpha': 0.0009666320188769839, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 1.8576991329284042e-05, 'preprocessor:nystroem_sampler:coef0': -0.801469916945603, 'preprocessor:nystroem_sampler:degree': 3, 'preprocessor:nystroem_sampler:gamma': 0.1826367118421475},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+(0.020000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'most_frequent', 'preprocessor:__choice__': 'nystroem_sampler', 'regressor:__choice__': 'ridge_regression', 'rescaling:__choice__': 'robust_scaler', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'preprocessor:nystroem_sampler:kernel': 'poly', 'preprocessor:nystroem_sampler:n_components': 111, 'regressor:ridge_regression:alpha': 0.001023021346525142, 'regressor:ridge_regression:fit_intercept': 'True', 'regressor:ridge_regression:tol': 0.00032796730808694064, 'rescaling:robust_scaler:q_max': 0.8122777462722713, 'rescaling:robust_scaler:q_min': 0.09538118836874313, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.010000000000000004, 'preprocessor:nystroem_sampler:coef0': -0.3623346852867062, 'preprocessor:nystroem_sampler:degree': 2, 'preprocessor:nystroem_sampler:gamma': 0.001540884740900545},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+]
+
+
+--- STATISTICS: ---
+auto-sklearn results:
+  Dataset name: boston_housing
+  Metric: r2
+  Best validation score: 0.891203
+  Number of target algorithm runs: 716
+  Number of successful target algorithm runs: 713
+  Number of crashed target algorithm runs: 2
+  Number of target algorithms that exceeded the time limit: 1
+  Number of target algorithms that exceeded the memory limit: 0
+
+
+
+--- SCORE: ---
+R2 score 0.8682766400102498
