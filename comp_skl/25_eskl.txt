@@ -1,0 +1,53 @@
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (16512, 8)
+[INFO] Test shape: (4128, 8)
+[INFO] Finding best model...
+[WARNING] [2020-01-12 12:16:56,966:AutoMLSMBO(1)::boston_housing] Could not find meta-data directory /vol/home/s2590433/test1/anaconda3/envs/amlenv/lib/python3.6/site-packages/autosklearn/metalearning/files/r2_regression_dense
+[WARNING] [2020-01-12 12:16:56,973:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:16:56,976:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:16:58,983:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:00,986:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:02,988:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:04,991:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:06,993:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:09,001:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:11,003:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:13,006:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:15,008:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:17,011:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:19,018:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:21,020:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:23,023:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 12:17:25,025:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[INFO] Elapsed time finding best model: 1501.194595336914 seconds.
+
+
+--- MODELS: ---
+[(1.000000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'no_preprocessing', 'regressor:__choice__': 'random_forest', 'rescaling:__choice__': 'standardize', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'regressor:random_forest:bootstrap': 'True', 'regressor:random_forest:criterion': 'mse', 'regressor:random_forest:max_depth': 'None', 'regressor:random_forest:max_features': 1.0, 'regressor:random_forest:max_leaf_nodes': 'None', 'regressor:random_forest:min_impurity_decrease': 0.0, 'regressor:random_forest:min_samples_leaf': 1, 'regressor:random_forest:min_samples_split': 2, 'regressor:random_forest:min_weight_fraction_leaf': 0.0, 'regressor:random_forest:n_estimators': 100, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.01},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+]
+
+
+--- STATISTICS: ---
+auto-sklearn results:
+  Dataset name: boston_housing
+  Metric: r2
+  Best validation score: 0.805540
+  Number of target algorithm runs: 19
+  Number of successful target algorithm runs: 15
+  Number of crashed target algorithm runs: 0
+  Number of target algorithms that exceeded the time limit: 3
+  Number of target algorithms that exceeded the memory limit: 1
+
+
+
+--- SCORE: ---
+R2 score 0.8068940609497814
+

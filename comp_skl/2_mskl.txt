@@ -1,0 +1,51 @@
+[INFO] Loading dataset.
+[INFO] Splitting.
+[INFO] Train shape: (16512, 8)
+[INFO] Test shape: (4128, 8)
+[INFO] Finding best model...
+Time limit for a single run is higher than total time limit. Capping the limit for a single run to the total time given to SMAC (119.813824)
+[WARNING] [2020-01-12 11:25:16,717:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:16,721:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:18,723:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:20,726:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:22,728:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:24,731:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:26,733:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:28,736:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:30,738:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:32,741:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:34,743:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:36,746:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:38,748:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:40,751:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[WARNING] [2020-01-12 11:25:42,753:EnsembleBuilder(1):boston_housing] No models better than random - using Dummy Score!
+[INFO] Elapsed time finding best model: 120.83465576171875 seconds.
+
+
+--- MODELS: ---
+[(1.000000, SimpleRegressionPipeline({'categorical_encoding:__choice__': 'one_hot_encoding', 'imputation:strategy': 'mean', 'preprocessor:__choice__': 'no_preprocessing', 'regressor:__choice__': 'random_forest', 'rescaling:__choice__': 'standardize', 'categorical_encoding:one_hot_encoding:use_minimum_fraction': 'True', 'regressor:random_forest:bootstrap': 'True', 'regressor:random_forest:criterion': 'mse', 'regressor:random_forest:max_depth': 'None', 'regressor:random_forest:max_features': 1.0, 'regressor:random_forest:max_leaf_nodes': 'None', 'regressor:random_forest:min_impurity_decrease': 0.0, 'regressor:random_forest:min_samples_leaf': 1, 'regressor:random_forest:min_samples_split': 2, 'regressor:random_forest:min_weight_fraction_leaf': 0.0, 'regressor:random_forest:n_estimators': 100, 'categorical_encoding:one_hot_encoding:minimum_fraction': 0.01},
+dataset_properties={
+  'task': 4,
+  'sparse': False,
+  'multilabel': False,
+  'multiclass': False,
+  'target_type': 'regression',
+  'signed': False})),
+]
+
+
+--- STATISTICS: ---
+auto-sklearn results:
+  Dataset name: boston_housing
+  Metric: r2
+  Best validation score: 0.805540
+  Number of target algorithm runs: 5
+  Number of successful target algorithm runs: 4
+  Number of crashed target algorithm runs: 0
+  Number of target algorithms that exceeded the time limit: 1
+  Number of target algorithms that exceeded the memory limit: 0
+
+
+
+--- SCORE: ---
+R2 score 0.8068940609497814
